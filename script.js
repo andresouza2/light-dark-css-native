@@ -2,12 +2,13 @@ const btnToggle = document.querySelector("button[id=toggle]");
 const body = document.querySelector("body");
 const localStorage = window.localStorage;
 
+
+
 document.addEventListener("DOMContentLoaded", () => {
-  localStorage.setItem("theme", "dark");
-  
-  const theme = localStorage.getItem("theme");
-  if (theme) {
-    body.classList.add(theme);
+  if (localStorage.getItem("theme") === "light") {
+    body.classList.add("light");
+  } else {
+    body.classList.add("dark");
   }
 });
 
