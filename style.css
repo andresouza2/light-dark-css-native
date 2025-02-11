@@ -8,6 +8,10 @@
   --dark-bg: darkslategray;
   --dark-color: ghostwhite;
   --dark-code: gold;
+
+  --dark-bg-transparent: #2f4f4f8e;
+  --light-bg-transparent: #f8f8ff8e;
+
 }
 
 * {
@@ -19,6 +23,21 @@
 }
 code {
   color: light-dark(var(--light-code), var(--dark-code));
+}
+
+button {
+  margin: 2rem;
+  background-color: light-dark(var(--dark-bg), var(--light-bg));
+  color: light-dark(var(--dark-color), var(--light-color));
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    background-color: light-dark(var(--light-bg-transparent), var(--dark-bg-transparent));
+    color: light-dark(var(--light-color), var(--dark-color));
+  }
 }
 
 .light {
