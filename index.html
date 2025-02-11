@@ -1,30 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
-<div class="dark">
-  <h1><code>light-dark()</code> CSS function</h1>
-  <section>
-    <h2>Automatic</h2>
-    <p>This section will react to the users system or user agent setting.</p>
-  </section>
-</div>
 
-<section class="light">
-  <h2>Light</h2>
-  <p>
-    This section will be light due to the <code>color-scheme: light;</code>.
-  </p>
-</section>
-<section class="dark">
-  <h2>Dark</h2>
-  <p>This section will be dark due to the <code>color-scheme: dark;</code>.</p>
-</section>
+<body class="dark">
+  <div>
+    <h1><code>light-dark()</code> CSS function</h1>
+    <code>
+      function f() {
+        return "light";
+      }
+    </code>
+    <section>
+      <h2>Automatic</h2>
+      <p>This section will react to the users system or user agent setting.</p>
+    </section>
+  </div>
+
+  <section>
+    <h2>Light</h2>
+    <p>
+      This section will be light due to the <code>color-scheme: light;</code>
+    </p>
+  </section>
+  <section>
+    <h2>Dark</h2>
+    <p>This section will be dark due to the <code>color-scheme: dark;</code></p>
+  </section>
 
 </body>
+
 </html>
