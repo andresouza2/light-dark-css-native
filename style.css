@@ -2,16 +2,14 @@
   color-scheme: light dark;
 
   --light-bg: ghostwhite;
+  --light-bg-transparent: #f8f8ff8e;
   --light-color: darkslategray;
   --light-code: tomato;
 
   --dark-bg: darkslategray;
+  --dark-bg-transparent: #2f4f4f8e;
   --dark-color: ghostwhite;
   --dark-code: gold;
-
-  --dark-bg-transparent: #2f4f4f8e;
-  --light-bg-transparent: #f8f8ff8e;
-
 }
 
 * {
