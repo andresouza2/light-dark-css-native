@@ -2,8 +2,6 @@ const btnToggle = document.querySelector("button[id=toggle]");
 const body = document.querySelector("body");
 const localStorage = window.localStorage;
 
-
-
 document.addEventListener("DOMContentLoaded", () => {
   if (localStorage.getItem("theme") === "light") {
     body.classList.add("light");
